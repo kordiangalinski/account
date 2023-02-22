@@ -1,5 +1,5 @@
 build:
-	go build ./cmd/app/main.go ./bin/app
+	go build -o ./bin/app ./cmd/app/main.go 
 
 run:	build
 	./bin/app

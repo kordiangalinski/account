@@ -4,7 +4,6 @@ go 1.19
 
 require (
 	github.com/gin-gonic/gin v1.8.2
-	go.mongodb.org/mongo-driver v1.11.2
 )
 
 require (
