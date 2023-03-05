@@ -6,14 +6,10 @@ import (
 
 func initializeAPIGroup(r *gin.RouterGroup) {
 	// Accounts
-	r.GET("/accounts", GetAccounts)
-	r.GET("/accounts/:id", GetAccountById)
-	r.POST("/accounts", CreateNewAccount)
-	r.DELETE("/accounts/:id", DeleteAccount)
-
-	// Auth
-	// TODO:
-
+	r.GET("/accounts", getAccounts)
+	r.GET("/accounts/:id", getAccountById)
+	r.POST("/accounts", createNewAccount)
+	r.DELETE("/accounts/:id", deleteAccount)
 }
 
 func InitializeHandlers(r *gin.Engine) {
